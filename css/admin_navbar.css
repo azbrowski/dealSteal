@@ -1,0 +1,171 @@
+body, html {
+	height: 100%;
+}
+
+a {
+	transition: all 200ms;
+}
+
+.wrapper {
+	display: flex;
+	align-items: stretch;
+	flex-direction: column;
+}
+
+.navbar {
+	background-color: #191919;
+	margin-bottom: 0;
+}
+
+.navbar-default {
+  border: 0 none;
+}
+
+nav.sidebar {
+	-webkit-transition: margin 200ms ease-out;
+	-moz-transition: margin 200ms ease-out;
+	-o-transition: margin 200ms ease-out;
+	transition: margin 200ms ease-out;
+}
+
+.navbar-default .navbar-nav > li > a {
+	color: #a4a4a4;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #fff;
+}
+
+.navbar-default .navbar-nav > li.nav-logo > a {
+	color: #fff;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form, .navbar-default .navbar-toggle {
+	border: 0 none;
+}
+
+.content {
+	height: calc( 100vh - 52px );
+	overflow: auto;
+	padding: 10px 20px;
+	width: 100%;
+}
+
+.header {
+	background: #fff;
+	height: 44px;
+	margin-bottom: 10px;
+	padding-bottom: 16px;
+	width: 100%;
+}
+
+.header > * {
+	display: inline-block;
+	margin: 0 6px 0 0;
+	vertical-align: middle;
+}
+
+.header > h2 {
+	line-height: 44px;
+}
+
+.btn-success, .btn-success:hover, .btn-success:active , .btn-success:focus {
+	background-color: #16eafd;
+	border-color: #16eafd;
+	color: #000;
+	font-size: 13px;
+	font-weight: 700;
+}
+
+@media (min-width: 765px) {
+ 
+	.wrapper {
+			display: flex;
+			align-items: stretch;
+			flex-direction: row;
+	}
+
+	.content {
+		height: 100vh;
+	}
+	
+	nav.sidebar:hover + .main{
+		margin-left: 200px;
+	}
+
+	nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+		margin-left: 0px;
+	}
+
+	nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+		text-align: center;
+		width: 100%;
+		margin-left: 0px;
+	}
+	
+	nav.sidebar a{
+		padding-right: 13px;
+	}
+
+	nav.sidebar .navbar-nav > li:first-child{
+		border-top: 1px #e5e5e5 solid;
+	}
+
+	nav.sidebar .navbar-nav > li{
+		border-bottom: 0 none;
+	}
+
+	nav.sidebar .navbar-nav .open .dropdown-menu {
+		position: static;
+		float: none;
+		width: auto;
+		margin-top: 0;
+		background-color: transparent;
+		border: 0;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+	}
+
+	nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+		padding: 0 0px 0 0px;
+	}
+
+	.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+		color: #777;
+	}
+
+	nav.sidebar{
+		max-width: 200px;
+		min-width: 200px;
+		margin-left: -160px;
+		float: left;
+		margin-bottom: 0px;
+	}
+
+	nav.sidebar li {
+		width: 100%;
+	}
+
+	nav.sidebar:hover{
+		margin-left: 0px;
+	}
+
+	.forAnimate{
+		opacity: 0;
+	}
+}
+   
+@media (min-width: 1330px) {
+
+	nav.sidebar{
+		margin-left: 0px;
+		float: left;
+	}
+
+	nav.sidebar .forAnimate{
+		opacity: 1;
+	}
+}
+ 
